@@ -172,6 +172,11 @@ button {
 .hero-section .content .content-btn > button:last-child {
   background-color: var(--blue-color);
 }
+
+.hero-section .hero-image img {
+  /* min-width: 500px; */
+  max-width: 500px;
+}
 /********* Hero Section  *********/
 
 /*-------- Card Section  --------*/
@@ -467,5 +472,16 @@ button {
 
   .footer-link {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-section > .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+
+  .hero-section > .hero-container {
+    flex-direction: column;
   }
 }
